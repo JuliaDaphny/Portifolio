@@ -70,26 +70,4 @@ navigationLinks.forEach((link) => {
 
     });
 
-} /* =========================
-   ANIMAÇÕES
-========================= */
-
-.fade-in {
-    opacity: 0;
-
-    transform: translateY(25px);
-
-    transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
-}
-
-.fade-in.visible {
-    opacity: 1;
-
-    transform: translateY(0);
-}
-
-.nav a.active {
-    color: var(--primary-light);
-} );
+});
