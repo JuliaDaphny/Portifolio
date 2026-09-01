@@ -3,35 +3,43 @@ document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector(".nav");
   const navLinks = document.querySelectorAll(".nav a");
   const sections = document.querySelectorAll("main section[id]");
-
-  const animatedElements = document.querySelectorAll(
-    ".hero-panel, " +
-    ".value-card, " +
-    ".skill-card, " +
-    ".timeline-item, " +
-    ".project-card, " +
-    ".leadership-grid article, " +
-    ".education-card, " +
-    ".social-item"
-  );
-
   const year = document.querySelector("#current-year");
 
+  const revealElements = document.querySelectorAll(
+    ".hero-copy, " +
+    ".hero-stack, " +
+    ".hero-metrics, " +
+    ".about-copy, " +
+    ".feature-card, " +
+    ".journey-card, " +
+    ".journey-summary, " +
+    ".skills-intro, " +
+    ".skill-card, " +
+    ".case-card, " +
+    ".experience-card, " +
+    ".leadership-card, " +
+    ".education-card, " +
+    ".learning-grid article, " +
+    ".contact-card, " +
+    ".contact-feature"
+  );
 
-  /* =========================
+
+  /* =========================================================
      ANO AUTOMÁTICO
-  ========================= */
+  ========================================================== */
 
   if (year) {
     year.textContent = new Date().getFullYear();
   }
 
 
-  /* =========================
+  /* =========================================================
      MENU MOBILE
-  ========================= */
+  ========================================================== */
 
   if (menuButton && nav) {
+
     menuButton.addEventListener("click", () => {
       const isOpen = nav.classList.toggle("open");
 
@@ -49,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
+
         nav.classList.remove("open");
 
         menuButton.setAttribute(
@@ -59,101 +68,25 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.remove(
           "menu-open"
         );
+
       });
     });
+
   }
 
 
-  /* =========================
-     ANIMAÇÕES AO ROLAR
-  ========================= */
+  /* =========================================================
+     ESC FECHA MENU
+  ========================================================== */
 
-  if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver(
-      (entries, currentObserver) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
+  document.addEventListener("keydown", (event) => {
 
-            currentObserver.unobserve(
-              entry.target
-            );
-          }
-        });
-      },
-      {
-        threshold: 0.12
-      }
-    );
-
-
-    animatedElements.forEach((element) => {
-      element.classList.add("fade-in");
-
-      observer.observe(element);
-    });
-  } else {
-    animatedElements.forEach((element) => {
-      element.classList.add("visible");
-    });
-  }
-
-
-  /* =========================
-     SEÇÃO ATIVA NO MENU
-  ========================= */
-
-  const updateActiveLink = () => {
-    let currentSection = "";
-
-    sections.forEach((section) => {
-      const sectionTop =
-        section.offsetTop - 150;
-
-      if (
-        window.scrollY >=
-        sectionTop
-      ) {
-        currentSection = section.id;
-      }
-    });
-
-
-    navLinks.forEach((link) => {
-      const linkTarget =
-        link.getAttribute("href");
-
-      link.classList.toggle(
-        "active",
-        linkTarget ===
-          `#${currentSection}`
-      );
-    });
-  };
-
-
-  updateActiveLink();
-
-
-  window.addEventListener(
-    "scroll",
-    updateActiveLink,
-    {
-      passive: true
-    }
-  );
-
-
-  /* =========================
-     FECHA MENU AO REDIMENSIONAR
-  ========================= */
-
-  window.addEventListener("resize", () => {
     if (
-      window.innerWidth > 920 &&
+      event.key === "Escape" &&
       nav &&
       menuButton
     ) {
+
       nav.classList.remove("open");
 
       menuButton.setAttribute(
@@ -164,33 +97,217 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.remove(
         "menu-open"
       );
+
     }
+
   });
 
 
-  /* =========================
-     FECHA MENU COM ESC
-  ========================= */
+  /* =========================================================
+     FECHAR MENU AO VOLTAR PARA DESKTOP
+  ========================================================== */
 
-  document.addEventListener(
-    "keydown",
-    (event) => {
+  window.addEventListener("resize", () => {
+
+    if (
+      window.innerWidth > 1050 &&
+      nav &&
+      menuButton
+    ) {
+
+      nav.classList.remove("open");
+
+      menuButton.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+      document.body.classList.remove(
+        "menu-open"
+      );
+
+    }
+
+  });
+
+
+  /* =========================================================
+     ANIMAÇÕES DE ENTRADA
+  ========================================================== */
+
+  if (
+    "IntersectionObserver" in window &&
+    !window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches
+  ) {
+
+    revealElements.forEach((element) => {
+      element.classList.add("reveal");
+    });
+
+
+    const revealObserver =
+      new IntersectionObserver(
+        (entries, observer) => {
+
+          entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add(
+                "visible"
+              );
+
+              observer.unobserve(
+                entry.target
+              );
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.1,
+          rootMargin:
+            "0px 0px -40px 0px"
+        }
+      );
+
+
+    revealElements.forEach((element) => {
+      revealObserver.observe(element);
+    });
+
+  } else {
+
+    revealElements.forEach((element) => {
+      element.classList.add("visible");
+    });
+
+  }
+
+
+  /* =========================================================
+     LINK ATIVO DO MENU
+  ========================================================== */
+
+  const updateActiveNavigation = () => {
+
+    const scrollPosition =
+      window.scrollY + 180;
+
+    let activeSection = "";
+
+
+    sections.forEach((section) => {
+
+      const sectionTop =
+        section.offsetTop;
+
+      const sectionBottom =
+        sectionTop +
+        section.offsetHeight;
+
+
       if (
-        event.key === "Escape" &&
-        nav &&
-        menuButton
+        scrollPosition >= sectionTop &&
+        scrollPosition < sectionBottom
       ) {
-        nav.classList.remove("open");
 
-        menuButton.setAttribute(
-          "aria-expanded",
-          "false"
-        );
+        activeSection =
+          section.getAttribute("id");
 
-        document.body.classList.remove(
-          "menu-open"
-        );
       }
+
+    });
+
+
+    navLinks.forEach((link) => {
+
+      const target =
+        link.getAttribute("href");
+
+      link.classList.toggle(
+        "active",
+        target === `#${activeSection}`
+      );
+
+    });
+
+  };
+
+
+  updateActiveNavigation();
+
+
+  window.addEventListener(
+    "scroll",
+    updateActiveNavigation,
+    {
+      passive: true
     }
   );
+
+
+  /* =========================================================
+     SCROLL SUAVE COM COMPENSAÇÃO DO HEADER
+  ========================================================== */
+
+  document.querySelectorAll(
+    'a[href^="#"]'
+  ).forEach((link) => {
+
+    link.addEventListener(
+      "click",
+      (event) => {
+
+        const targetId =
+          link.getAttribute("href");
+
+        if (
+          !targetId ||
+          targetId === "#"
+        ) {
+          return;
+        }
+
+
+        const target =
+          document.querySelector(
+            targetId
+          );
+
+
+        if (!target) {
+          return;
+        }
+
+
+        event.preventDefault();
+
+
+        const headerHeight =
+          document.querySelector(
+            ".header"
+          )?.offsetHeight || 0;
+
+
+        const top =
+          target.getBoundingClientRect().top +
+          window.scrollY -
+          headerHeight;
+
+
+        window.scrollTo({
+          top,
+          behavior: "smooth"
+        });
+
+      }
+    );
+
+  });
+
 });
