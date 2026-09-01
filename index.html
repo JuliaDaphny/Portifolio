@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta
     name="description"
-    content="Portfólio profissional de Júlia Daphiny, Analista de Dados e Business Intelligence com experiência em Power BI, SQL, Python, ETL, Data Warehouse, modelagem de dados e soluções corporativas."
+    content="Portfólio profissional de Júlia Daphiny, Analista de Dados e Business Intelligence com mais de 5 anos de experiência em BI, Power BI, SQL, Python, ETL, DataStage, ERwin, Data Warehouse, SharePoint e soluções orientadas a dados."
   >
 
-  <meta
-    name="author"
-    content="Júlia Daphiny"
-  >
+  <meta name="author" content="Júlia Daphiny">
 
   <meta
     name="keywords"
-    content="Júlia Daphiny, Analista de Dados, Business Intelligence, BI, Power BI, SQL, Python, ETL, Data Warehouse, DataStage, ERwin, SharePoint, Power Apps"
+    content="Júlia Daphiny, Analista de Dados, Business Intelligence, BI, Power BI, SQL, Python, ETL, DataStage, ERwin, Data Warehouse, SharePoint, AWS, Athena, Lambda"
   >
 
   <meta
@@ -31,46 +23,119 @@
 
   <meta
     property="og:description"
-    content="Dados, BI, tecnologia e evolução para liderança. Conheça minha trajetória profissional, competências e principais frentes de atuação."
+    content="Dados, Business Intelligence, tecnologia, estratégia e liderança. Conheça minha trajetória, projetos e experiência profissional."
   >
 
-  <meta
-    property="og:type"
-    content="website"
-  >
+  <meta property="og:type" content="website">
 
-  <title>
-    Júlia Daphiny | Dados & Business Intelligence
-  </title>
+  <title>Júlia Daphiny | Dados & Business Intelligence</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
     rel="stylesheet"
-    href="style.css"
   >
-</head>
 
+  <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
-  <!-- =========================
-       CABEÇALHO
-  ========================== -->
-
-  <header
-    class="header"
-    id="topo"
+  <!-- SVG ICONS -->
+  <svg
+    class="svg-sprite"
+    aria-hidden="true"
+    width="0"
+    height="0"
   >
+    <symbol id="icon-layers" viewBox="0 0 24 24">
+      <path d="M12 2 2.5 7 12 12l9.5-5L12 2Zm-8.5 9L12 16l8.5-5M3.5 15 12 20l8.5-5"/>
+    </symbol>
 
+    <symbol id="icon-target" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="8"/>
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 12 21 3M17 3h4v4"/>
+    </symbol>
+
+    <symbol id="icon-chart" viewBox="0 0 24 24">
+      <path d="M4 20V10h4v10M10 20V4h4v16M16 20v-7h4v7"/>
+    </symbol>
+
+    <symbol id="icon-database" viewBox="0 0 24 24">
+      <ellipse cx="12" cy="5" rx="8" ry="3"/>
+      <path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/>
+    </symbol>
+
+    <symbol id="icon-flow" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="6" height="5" rx="1"/>
+      <rect x="15" y="3" width="6" height="5" rx="1"/>
+      <rect x="9" y="16" width="6" height="5" rx="1"/>
+      <path d="M6 8v4h6m6-4v4h-6m0 0v4"/>
+    </symbol>
+
+    <symbol id="icon-cloud" viewBox="0 0 24 24">
+      <path d="M7 18h10a4 4 0 0 0 .7-7.9A6 6 0 0 0 6.3 9 4.5 4.5 0 0 0 7 18Z"/>
+    </symbol>
+
+    <symbol id="icon-folder" viewBox="0 0 24 24">
+      <path d="M3 6h7l2 2h9v10H3V6Z"/>
+    </symbol>
+
+    <symbol id="icon-people" viewBox="0 0 24 24">
+      <circle cx="9" cy="8" r="3"/>
+      <circle cx="17" cy="9" r="2.5"/>
+      <path d="M3 20c0-4 2.7-6 6-6s6 2 6 6M15 15c3 0 5 1.7 5 5"/>
+    </symbol>
+
+    <symbol id="icon-message" viewBox="0 0 24 24">
+      <path d="M4 5h16v11H9l-5 4V5Z"/>
+      <path d="M8 10h.01M12 10h.01M16 10h.01"/>
+    </symbol>
+
+    <symbol id="icon-handshake" viewBox="0 0 24 24">
+      <path d="m3 11 5-5 4 2 4-2 5 5-6 6-3-2-3 2-6-6Z"/>
+      <path d="m8 6 4 4 4-4"/>
+    </symbol>
+
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="m4 7 8 6 8-6"/>
+    </symbol>
+
+    <symbol id="icon-linkedin" viewBox="0 0 24 24">
+      <path d="M5 9v10M5 5.5v.01M10 19V9m0 4c1-3 7-4 7 1v5M17 14v5"/>
+    </symbol>
+
+    <symbol id="icon-pin" viewBox="0 0 24 24">
+      <path d="M12 21s7-6 7-12a7 7 0 1 0-14 0c0 6 7 12 7 12Z"/>
+      <circle cx="12" cy="9" r="2"/>
+    </symbol>
+
+    <symbol id="icon-bank" viewBox="0 0 24 24">
+      <path d="M3 9h18M5 9v9M10 9v9M14 9v9M19 9v9M3 19h18M12 3l9 5H3l9-5Z"/>
+    </symbol>
+
+    <symbol id="icon-store" viewBox="0 0 24 24">
+      <path d="M4 10h16l-1-5H5l-1 5Z"/>
+      <path d="M5 10v9h14v-9M9 19v-5h6v5"/>
+    </symbol>
+
+    <symbol id="icon-code" viewBox="0 0 24 24">
+      <path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/>
+    </symbol>
+  </svg>
+
+
+  <!-- HEADER -->
+  <header class="header" id="topo">
     <div class="container nav-container">
 
-      <a
-        href="#inicio"
-        class="logo"
-        aria-label="Ir para o início"
-      >
-        Júlia<span>.</span>
+      <a href="#inicio" class="brand">
+        PORTFÓLIO
       </a>
-
 
       <button
         class="menu-toggle"
@@ -83,56 +148,40 @@
         <span></span>
       </button>
 
-
-      <nav
-        class="nav"
-        aria-label="Navegação principal"
-      >
-        <a href="#sobre">
-          Sobre
-        </a>
-
-        <a href="#competencias">
-          Competências
-        </a>
-
-        <a href="#experiencia">
-          Experiência
-        </a>
-
-        <a href="#atuacao">
-          Atuação
-        </a>
-
-        <a href="#lideranca">
-          Liderança
-        </a>
-
-        <a href="#contato">
-          Contato
-        </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#competencias">Competências</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#lideranca">Liderança</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato">Contato</a>
       </nav>
 
+      <a
+        class="header-cta"
+        href="https://wa.me/5561991060515"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Vamos conversar
+        <span>→</span>
+      </a>
+
     </div>
-
   </header>
-
 
 
   <main>
 
+    <!-- ======================================================
+         01 - HERO
+    ======================================================= -->
 
-    <!-- =========================
-         INÍCIO
-    ========================== -->
+    <section id="inicio" class="screen hero-section glow-left glow-right">
 
-    <section
-      id="inicio"
-      class="hero"
-    >
-
-      <div class="container hero-grid">
-
+      <div class="container hero-layout">
 
         <div class="hero-copy">
 
@@ -140,226 +189,204 @@
             DADOS • BI • TECNOLOGIA • NEGÓCIO
           </p>
 
-
-          <h1>
-            Júlia Daphiny
+          <h1 class="hero-name">
+            <span>Júlia</span> Daphiny
           </h1>
-
 
           <p class="hero-role">
             Analista de Dados & Business Intelligence
           </p>
 
-
-          <p class="hero-text">
-            Transformo dados em informação útil para apoiar decisões,
-            estruturar processos e aproximar tecnologia das necessidades
-            do negócio.
+          <p class="hero-description">
+            Transformo dados complexos em informação estruturada para
+            apoiar decisões, otimizar processos e gerar impacto real
+            no negócio.
           </p>
 
-
-          <p class="hero-text hero-text-secondary">
-            Minha trajetória reúne análise de dados, BI, ETL,
-            modelagem, automação, Data Warehouse e soluções
-            corporativas. Como próximo passo, busco ampliar minha
-            atuação em liderança, coordenação de entregas e
-            desenvolvimento de equipes.
+          <p class="hero-experience">
+            <strong>Mais de 5 anos</strong> de experiência em projetos que
+            conectam dados, tecnologia e estratégia para impulsionar resultados.
           </p>
-
 
           <div class="hero-actions">
 
-            <a
-              class="button button-primary"
-              href="#experiencia"
-            >
-              Ver trajetória
+            <a class="btn btn-primary" href="#projetos">
+              Ver projetos
+              <span>→</span>
             </a>
 
-
             <a
-              class="button button-secondary"
-              href="https://www.linkedin.com/in/j%C3%BAlia-daphiny-196402112/"
-              target="_blank"
-              rel="noopener noreferrer"
+              class="btn btn-outline"
+              href="Curriculo_Julia_Daphiny.pdf"
+              download
             >
-              LinkedIn
+              Baixar currículo
+              <span>↓</span>
             </a>
-
-          </div>
-
-
-          <div
-            class="hero-highlights"
-            aria-label="Resumo profissional"
-          >
-
-            <div>
-              <strong>
-                Desde 2020
-              </strong>
-
-              <span>
-                atuando com dados
-              </span>
-            </div>
-
-
-            <div>
-              <strong>
-                BI + Dados
-              </strong>
-
-              <span>
-                visão técnica e de negócio
-              </span>
-            </div>
-
-
-            <div>
-              <strong>
-                ADS
-              </strong>
-
-              <span>
-                graduação concluída no IESB
-              </span>
-            </div>
 
           </div>
 
         </div>
 
 
+        <aside class="glass-panel hero-stack">
 
-        <aside
-          class="hero-panel"
-          aria-label="Principais competências"
-        >
+          <div class="stack-title">
+            <svg class="icon">
+              <use href="#icon-layers"></use>
+            </svg>
 
-          <p class="panel-label">
-            CORE STACK
-          </p>
+            <span>CORE STACK</span>
+          </div>
 
-
-          <div class="panel-tags">
+          <div class="stack-tags">
             <span>Power BI</span>
             <span>SQL</span>
             <span>Python</span>
             <span>ETL</span>
-            <span>IBM DataStage</span>
-            <span>Data Warehouse</span>
+            <span>DataStage</span>
             <span>ERwin</span>
+            <span>Data Warehouse</span>
             <span>SharePoint</span>
+            <span>AWS</span>
+            <span>Athena</span>
+            <span>Lambda</span>
           </div>
 
+          <div class="stack-focus">
 
-          <div class="panel-line"></div>
+            <div class="stack-title">
+              <svg class="icon">
+                <use href="#icon-target"></use>
+              </svg>
 
+              <span>FOCO PROFISSIONAL</span>
+            </div>
 
-          <p class="panel-label">
-            FOCO PROFISSIONAL
-          </p>
+            <p>
+              Dados, Business Intelligence, integração de dados,
+              análise de indicadores e soluções corporativas com
+              foco em eficiência, qualidade e resultados.
+            </p>
 
-
-          <p class="panel-copy">
-            Dados, Business Intelligence, integração de dados,
-            análise de indicadores e evolução para liderança
-            em ambientes de tecnologia.
-          </p>
+          </div>
 
         </aside>
 
-      </div>
 
+        <div class="hero-metrics">
+
+          <div class="metric">
+            <strong>5+</strong>
+            <span>anos de experiência</span>
+            <small>em Dados & BI</small>
+          </div>
+
+          <div class="metric">
+            <strong>15+</strong>
+            <span>automações de</span>
+            <small>relatórios</small>
+          </div>
+
+          <div class="metric">
+            <strong>25+</strong>
+            <span>tabelas modeladas</span>
+            <small>em projeto de dados</small>
+          </div>
+
+          <div class="metric">
+            <strong>500+</strong>
+            <span>campos estruturados</span>
+            <small>em ambientes corporativos</small>
+          </div>
+
+        </div>
+
+      </div>
     </section>
 
 
+    <!-- ======================================================
+         02 - SOBRE
+    ======================================================= -->
 
-    <!-- =========================
-         SOBRE
-    ========================== -->
+    <section id="sobre" class="screen glow-right-soft">
 
-    <section
-      id="sobre"
-      class="section"
-    >
+      <div class="container about-layout">
 
-      <div class="container">
+        <div class="about-copy">
 
-        <p class="section-kicker">
-          SOBRE
-        </p>
+          <p class="eyebrow light-label">
+            SOBRE MIM
+          </p>
 
+          <h2 class="display-title">
+            Dados com propósito.<br>
+            Decisões com impacto.
+          </h2>
 
-        <h2 class="section-title">
-          Tecnologia com contexto de negócio.
-        </h2>
+          <p>
+            Minha trajetória começou na área pública, estruturando dados
+            sobre pessoas com deficiência que antes estavam dispersos
+            entre diferentes instituições. Desde então, venho transformando
+            informação em valor para o negócio — em diferentes contextos,
+            desafios e escalas.
+          </p>
 
+          <p>
+            Atuo conectando dados, tecnologia e estratégia para apoiar
+            decisões, otimizar processos e gerar impacto real para
+            organizações e pessoas.
+          </p>
 
-        <div class="two-columns">
-
-
-          <div class="prose">
-
-            <p>
-              Sou formada em Análise e Desenvolvimento de Sistemas
-              pelo IESB e construí minha carreira atuando com dados,
-              Business Intelligence e soluções corporativas em
-              diferentes contextos de negócio.
-            </p>
-
-
-            <p>
-              Tenho experiência com dashboards e indicadores,
-              consultas SQL, Python, processos ETL, modelagem de dados,
-              Data Warehouse, integração de informações e desenvolvimento
-              de soluções utilizando ferramentas do ecossistema Microsoft
-              e plataformas corporativas.
-            </p>
-
+          <blockquote class="quote-card">
+            <span class="quote-mark">“</span>
 
             <p>
-              Minha experiência também envolve levantamento de requisitos,
-              metodologias ágeis e comunicação com áreas de negócio.
-              Gosto de entender o problema antes de escolher a ferramenta
-              e de transformar demandas em entregas claras e úteis.
+              Acredito que dados só fazem sentido quando geram clareza,
+              direcionam ações e constroem um futuro mais inteligente
+              para os negócios.
             </p>
+          </blockquote>
 
-          </div>
+        </div>
 
 
+        <div class="about-values">
+
+          <p class="eyebrow light-label">
+            O QUE ME DEFINE
+          </p>
 
           <div class="value-grid">
 
+            <article class="feature-card">
 
-            <article class="value-card">
+              <div class="icon-circle">
+                <svg class="icon">
+                  <use href="#icon-target"></use>
+                </svg>
+              </div>
 
-              <span>
-                01
-              </span>
-
-              <h3>
-                Visão analítica
-              </h3>
+              <h3>Visão analítica</h3>
 
               <p>
-                Leitura de dados, indicadores e padrões para apoiar decisões.
+                Leitura de dados, identificação de padrões e geração
+                de insights para decisões mais assertivas.
               </p>
 
             </article>
 
 
+            <article class="feature-card">
 
-            <article class="value-card">
+              <div class="icon-circle">
+                <svg class="icon">
+                  <use href="#icon-chart"></use>
+                </svg>
+              </div>
 
-              <span>
-                02
-              </span>
-
-              <h3>
-                Visão de negócio
-              </h3>
+              <h3>Visão de negócio</h3>
 
               <p>
                 Experiência conectando dados a demandas comerciais,
@@ -369,16 +396,15 @@
             </article>
 
 
+            <article class="feature-card">
 
-            <article class="value-card">
+              <div class="icon-circle">
+                <svg class="icon">
+                  <use href="#icon-database"></use>
+                </svg>
+              </div>
 
-              <span>
-                03
-              </span>
-
-              <h3>
-                Integração
-              </h3>
+              <h3>Integração</h3>
 
               <p>
                 Atuação com ETL, modelagem, Data Warehouse
@@ -388,804 +414,1049 @@
             </article>
 
 
+            <article class="feature-card">
 
-            <article class="value-card">
+              <div class="icon-circle">
+                <svg class="icon">
+                  <use href="#icon-people"></use>
+                </svg>
+              </div>
 
-              <span>
-                04
-              </span>
-
-              <h3>
-                Colaboração
-              </h3>
+              <h3>Colaboração</h3>
 
               <p>
-                Comunicação, requisitos, trabalho em equipe
+                Comunicação clara, requisitos, trabalho em equipe
                 e atuação em contextos ágeis.
               </p>
 
             </article>
 
-
           </div>
 
         </div>
 
       </div>
-
     </section>
 
 
+    <!-- ======================================================
+         03 - TRAJETÓRIA
+    ======================================================= -->
 
-    <!-- =========================
-         COMPETÊNCIAS
-    ========================== -->
-
-    <section
-      id="competencias"
-      class="section section-alt"
-    >
+    <section id="trajetoria" class="screen glow-left">
 
       <div class="container">
 
-        <p class="section-kicker">
-          COMPETÊNCIAS
-        </p>
+        <div class="section-intro section-intro-wide">
 
-
-        <h2 class="section-title">
-          Uma base técnica ampla, sem perder o objetivo do negócio.
-        </h2>
-
-
-
-        <div class="skills-grid">
-
-
-          <article class="skill-card">
-
-            <h3>
-              Business Intelligence
-            </h3>
-
-            <p>
-              Dashboards, relatórios gerenciais, KPIs e visualizações
-              para acompanhamento de desempenho.
-            </p>
-
-            <div class="tags">
-              <span>Power BI</span>
-              <span>Tableau</span>
-              <span>DAX</span>
-              <span>KPIs</span>
-            </div>
-
-          </article>
-
-
-
-          <article class="skill-card">
-
-            <h3>
-              SQL & Bancos de Dados
-            </h3>
-
-            <p>
-              Consultas, análise e manipulação de dados em diferentes
-              bancos e ambientes.
-            </p>
-
-            <div class="tags">
-              <span>SQL</span>
-              <span>MySQL</span>
-              <span>PostgreSQL</span>
-              <span>SQL Server</span>
-            </div>
-
-          </article>
-
-
-
-          <article class="skill-card">
-
-            <h3>
-              ETL & Integração
-            </h3>
-
-            <p>
-              Extração, transformação, integração e carga de dados
-              para ambientes analíticos.
-            </p>
-
-            <div class="tags">
-              <span>ETL</span>
-              <span>IBM DataStage</span>
-              <span>Data Warehouse</span>
-            </div>
-
-          </article>
-
-
-
-          <article class="skill-card">
-
-            <h3>
-              Modelagem de Dados
-            </h3>
-
-            <p>
-              Modelagem lógica e física, organização de estruturas
-              analíticas e suporte à qualidade dos dados.
-            </p>
-
-            <div class="tags">
-              <span>ERwin</span>
-              <span>Data Modeling</span>
-              <span>Data Warehouse</span>
-            </div>
-
-          </article>
-
-
-
-          <article class="skill-card">
-
-            <h3>
-              Python & Automação
-            </h3>
-
-            <p>
-              Análise de dados, geração de visualizações
-              e automação de processos repetitivos.
-            </p>
-
-            <div class="tags">
-              <span>Python</span>
-              <span>Automação</span>
-              <span>Análise de Dados</span>
-            </div>
-
-          </article>
-
-
-
-          <article class="skill-card">
-
-            <h3>
-              Soluções & Processos
-            </h3>
-
-            <p>
-              Aplicações, portais, fluxos, requisitos
-              e colaboração em ambientes ágeis.
-            </p>
-
-            <div class="tags">
-              <span>SharePoint</span>
-              <span>Power Apps</span>
-              <span>Bizagi</span>
-              <span>Scrum</span>
-              <span>Kanban</span>
-            </div>
-
-          </article>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         EXPERIÊNCIA
-    ========================== -->
-
-    <section
-      id="experiencia"
-      class="section"
-    >
-
-      <div class="container">
-
-        <p class="section-kicker">
-          EXPERIÊNCIA
-        </p>
-
-
-        <h2 class="section-title">
-          Trajetória profissional.
-        </h2>
-
-
-
-        <div class="timeline">
-
-
-          <article class="timeline-item">
-
-            <div class="timeline-meta">
-
-              <span>
-                ABR 2025 — ATUAL
-              </span>
-
-              <small>
-                Stefanini
-              </small>
-
-            </div>
-
-
-            <div class="timeline-content">
-
-              <h3>
-                Analista de Dados Pleno
-              </h3>
-
-              <p>
-                Atuação em projetos de Data Warehouse, integração de dados
-                e Business Intelligence, conectando engenharia, análise
-                e visualização.
-              </p>
-
-              <ul>
-                <li>
-                  Desenvolvimento de processos ETL com IBM DataStage.
-                </li>
-
-                <li>
-                  Modelagem lógica e física com ERwin Data Modeler.
-                </li>
-
-                <li>
-                  Consultas SQL e automações em Python.
-                </li>
-
-                <li>
-                  Dashboards e KPIs em Power BI.
-                </li>
-
-                <li>
-                  Desenvolvimento de portais corporativos em SharePoint.
-                </li>
-              </ul>
-
-            </div>
-
-          </article>
-
-
-
-          <article class="timeline-item">
-
-            <div class="timeline-meta">
-
-              <span>
-                ABR 2024 — MAI 2025
-              </span>
-
-              <small>
-                Surf Telecom
-              </small>
-
-            </div>
-
-
-            <div class="timeline-content">
-
-              <h3>
-                Analista Comercial
-              </h3>
-
-              <p>
-                Experiência na interseção entre dados e estratégia comercial,
-                utilizando análises para apoiar acompanhamento
-                e tomada de decisão.
-              </p>
-
-              <ul>
-                <li>
-                  Análise de mercado e previsão de vendas.
-                </li>
-
-                <li>
-                  Dashboards e relatórios gerenciais em Power BI.
-                </li>
-
-                <li>
-                  Acompanhamento de indicadores de desempenho.
-                </li>
-
-                <li>
-                  Monitoramento e ajuste de estoque por meio
-                  de painéis analíticos.
-                </li>
-
-                <li>
-                  Geração de insights utilizando SQL, Python e Power BI.
-                </li>
-              </ul>
-
-            </div>
-
-          </article>
-
-
-
-          <article class="timeline-item">
-
-            <div class="timeline-meta">
-
-              <span>
-                FEV 2023 — MAR 2024
-              </span>
-
-              <small>
-                Every Cybersecurity and GRC
-              </small>
-
-            </div>
-
-
-            <div class="timeline-content">
-
-              <h3>
-                Analista de Dados
-              </h3>
-
-              <p>
-                Desenvolvimento de soluções analíticas e corporativas
-                para gestão orçamentária, projetos
-                e eficiência operacional.
-              </p>
-
-              <ul>
-                <li>
-                  Painéis, relatórios e visualizações em Power BI.
-                </li>
-
-                <li>
-                  Soluções com Power Apps e SharePoint.
-                </li>
-
-                <li>
-                  Análise de dados e visualizações utilizando Python.
-                </li>
-
-                <li>
-                  Busca de insights para decisões estratégicas
-                  e eficiência operacional.
-                </li>
-
-                <li>
-                  Contribuição no desenvolvimento de fluxos no Bizagi.
-                </li>
-              </ul>
-
-            </div>
-
-          </article>
-
-
-
-          <article class="timeline-item">
-
-            <div class="timeline-meta">
-
-              <span>
-                OUT 2020 — FEV 2023
-              </span>
-
-              <small>
-                Ministério dos Direitos Humanos e da Cidadania
-              </small>
-
-            </div>
-
-
-            <div class="timeline-content">
-
-              <h3>
-                Analista de Dados
-              </h3>
-
-              <p>
-                Atuação com grandes conjuntos de dados
-                e participação na estruturação de ambiente
-                de Data Warehouse.
-              </p>
-
-              <ul>
-                <li>
-                  Coleta, processamento e análise de dados.
-                </li>
-
-                <li>
-                  Participação na implantação de Data Warehouse.
-                </li>
-
-                <li>
-                  Extração, transformação e carga de dados.
-                </li>
-
-                <li>
-                  Atuação voltada à qualidade
-                  e integridade das informações.
-                </li>
-              </ul>
-
-            </div>
-
-          </article>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         FRENTES DE ATUAÇÃO
-    ========================== -->
-
-    <section
-      id="atuacao"
-      class="section section-alt"
-    >
-
-      <div class="container">
-
-        <p class="section-kicker">
-          FRENTES DE ATUAÇÃO
-        </p>
-
-
-        <h2 class="section-title">
-          O tipo de problema que já fez parte da minha rotina.
-        </h2>
-
-
-
-        <div class="projects-grid">
-
-
-          <article class="project-card">
-
-            <div class="project-number">
-              01
-            </div>
-
-            <h3>
-              Integração & Data Warehouse
-            </h3>
-
-            <p>
-              Estruturação e integração de dados, ETL,
-              modelagem e preparação de informações
-              para ambientes analíticos.
-            </p>
-
-            <div class="tags">
-              <span>DataStage</span>
-              <span>SQL</span>
-              <span>ERwin</span>
-              <span>DW</span>
-            </div>
-
-          </article>
-
-
-
-          <article class="project-card">
-
-            <div class="project-number">
-              02
-            </div>
-
-            <h3>
-              BI & Indicadores
-            </h3>
-
-            <p>
-              Desenvolvimento de dashboards, relatórios e KPIs
-              para acompanhamento operacional,
-              comercial e gerencial.
-            </p>
-
-            <div class="tags">
-              <span>Power BI</span>
-              <span>DAX</span>
-              <span>KPIs</span>
-            </div>
-
-          </article>
-
-
-
-          <article class="project-card">
-
-            <div class="project-number">
-              03
-            </div>
-
-            <h3>
-              Dados aplicados ao negócio
-            </h3>
-
-            <p>
-              Análises voltadas a mercado, vendas, estoque,
-              orçamento, projetos e melhoria
-              da tomada de decisão.
-            </p>
-
-            <div class="tags">
-              <span>Python</span>
-              <span>SQL</span>
-              <span>Análise</span>
-            </div>
-
-          </article>
-
-
-
-          <article class="project-card">
-
-            <div class="project-number">
-              04
-            </div>
-
-            <h3>
-              Soluções corporativas
-            </h3>
-
-            <p>
-              Desenvolvimento de soluções internas, portais
-              e fluxos para apoiar processos
-              e facilitar o acesso às informações.
-            </p>
-
-            <div class="tags">
-              <span>SharePoint</span>
-              <span>Power Apps</span>
-              <span>Bizagi</span>
-            </div>
-
-          </article>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         LIDERANÇA
-    ========================== -->
-
-    <section
-      id="lideranca"
-      class="section"
-    >
-
-      <div class="container">
-
-        <p class="section-kicker">
-          PRÓXIMO PASSO
-        </p>
-
-
-        <h2 class="section-title">
-          Evolução para liderança em Dados & Tecnologia.
-        </h2>
-
-
-
-        <div class="leadership-layout">
-
-
-          <div class="prose">
-
-            <p>
-              Minha trajetória técnica me deu contato com diferentes
-              áreas, demandas e contextos de negócio. Quero usar essa
-              base para ampliar minha atuação em organização de entregas,
-              priorização, comunicação, desenvolvimento de pessoas
-              e coordenação de equipes.
-            </p>
-
-
-            <p>
-              Busco oportunidades que permitam continuar aprofundando
-              minha experiência em dados e BI e, ao mesmo tempo,
-              desenvolver competências necessárias para posições
-              futuras de liderança.
-            </p>
-
-          </div>
-
-
-
-          <div class="leadership-grid">
-
-
-            <article>
-
-              <h3>
-                Comunicação
-              </h3>
-
-              <p>
-                Traduzir demandas entre áreas técnicas e de negócio.
-              </p>
-
-            </article>
-
-
-
-            <article>
-
-              <h3>
-                Organização
-              </h3>
-
-              <p>
-                Estruturar prioridades, processos
-                e acompanhamento de entregas.
-              </p>
-
-            </article>
-
-
-
-            <article>
-
-              <h3>
-                Colaboração
-              </h3>
-
-              <p>
-                Construir soluções em conjunto com diferentes
-                áreas e perfis profissionais.
-              </p>
-
-            </article>
-
-
-
-            <article>
-
-              <h3>
-                Desenvolvimento
-              </h3>
-
-              <p>
-                Evoluir em gestão de pessoas,
-                liderança e formação de equipes.
-              </p>
-
-            </article>
-
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         FORMAÇÃO
-    ========================== -->
-
-    <section
-      id="formacao"
-      class="section section-alt"
-    >
-
-      <div class="container">
-
-        <p class="section-kicker">
-          FORMAÇÃO
-        </p>
-
-
-        <h2 class="section-title">
-          Base acadêmica.
-        </h2>
-
-
-        <article class="education-card">
-
-          <span>
-            CONCLUÍDO • 2022
-          </span>
-
-          <h3>
-            Análise e Desenvolvimento de Sistemas
-          </h3>
-
-          <p>
-            IESB
+          <p class="eyebrow">
+            MINHA TRAJETÓRIA
           </p>
 
-        </article>
+          <h2 class="display-title">
+            De dados fragmentados<br>
+            a decisões de negócio.
+          </h2>
+
+          <p>
+            Uma jornada que começou na área pública, passou pela
+            governança, inteligência de mercado e hoje atua na
+            estruturação e transformação de dados em ambientes
+            corporativos de grande porte.
+          </p>
+
+        </div>
+
+
+        <div class="journey">
+
+          <div class="journey-line"></div>
+
+          <article class="journey-card">
+
+            <div class="journey-dot"></div>
+
+            <span class="year">2020</span>
+
+            <h3>Dados públicos</h3>
+
+            <p class="company">
+              Secretaria Nacional dos Direitos da Pessoa com Deficiência
+            </p>
+
+            <p>
+              Estruturação e centralização de dados sobre pessoas
+              com deficiência. Construção de bases e dashboards internos
+              e externos, atuação em parceria com a Fiocruz, direcionamento
+              de atividades da equipe e reporte das entregas à liderança.
+            </p>
+
+          </article>
+
+
+          <article class="journey-card">
+
+            <div class="journey-dot"></div>
+
+            <span class="year">2023</span>
+
+            <h3>Governança & Gestão</h3>
+
+            <p class="company">
+              Every / ANA
+            </p>
+
+            <p>
+              Governança de TI, acompanhamento de projetos, orçamento,
+              contratos e entregas. Construção de indicadores, painel
+              gerencial e portal corporativo em SharePoint.
+            </p>
+
+          </article>
+
+
+          <article class="journey-card">
+
+            <div class="journey-dot"></div>
+
+            <span class="year">2024</span>
+
+            <h3>Inteligência de Mercado</h3>
+
+            <p class="company">
+              Surf Telecom
+            </p>
+
+            <p>
+              Análises de vendas, campanhas, estoque e desempenho regional.
+              Projeções, metas, relatórios periódicos e suporte à decisão
+              comercial com AWS, Athena e Lambda.
+            </p>
+
+          </article>
+
+
+          <article class="journey-card">
+
+            <div class="journey-dot"></div>
+
+            <span class="year">2025+</span>
+
+            <h3>Modelagem, Dados & BI</h3>
+
+            <p class="company">
+              Stefanini / Banco do Brasil
+            </p>
+
+            <p>
+              Modelagem e preparação de dados com DataStage e ERwin.
+              Estruturação de 25+ tabelas e 500+ campos, atualização
+              de portal SharePoint e construção de dashboards.
+            </p>
+
+          </article>
+
+        </div>
+
+
+        <div class="journey-summary">
+
+          <svg class="icon">
+            <use href="#icon-chart"></use>
+          </svg>
+
+          <p>
+            Em cada etapa, o propósito foi o mesmo:
+            transformar dados em informação confiável para apoiar decisões,
+            impulsionar resultados e gerar impacto real.
+          </p>
+
+        </div>
 
       </div>
-
     </section>
 
 
+    <!-- ======================================================
+         04 - COMPETÊNCIAS
+    ======================================================= -->
 
-    <!-- =========================
-         CONTATO
-    ========================== -->
+    <section id="competencias" class="screen glow-right">
 
-    <section
-      id="contato"
-      class="section contact-section"
-    >
+      <div class="container skills-layout">
 
-      <div class="container contact-container">
+        <div class="skills-intro">
 
-        <p class="section-kicker">
-          CONTATO
-        </p>
+          <p class="eyebrow">
+            COMPETÊNCIAS
+          </p>
+
+          <h2 class="display-title medium-title">
+            Ferramentas,
+            metodologias e
+            conhecimentos que
+            aplico no dia a dia.
+          </h2>
+
+          <p>
+            Combino visão de negócio com capacidade técnica para
+            transformar dados em soluções que geram valor,
+            otimizam processos e apoiam decisões estratégicas.
+          </p>
+
+          <div class="focus-card">
+
+            <svg class="icon">
+              <use href="#icon-target"></use>
+            </svg>
+
+            <div>
+              <span>FOCO NO QUE IMPORTA</span>
+
+              <p>
+                Entender problemas, estruturar informações
+                e entregar resultados que façam sentido para o negócio.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
 
 
-        <h2 class="section-title contact-title">
-          Vamos conversar?
+        <div class="skill-cards">
+
+          <article class="skill-card">
+
+            <div class="icon-circle small">
+              <svg class="icon">
+                <use href="#icon-chart"></use>
+              </svg>
+            </div>
+
+            <h3>BI & Visualização</h3>
+
+            <p>
+              Power BI · DAX · Tableau<br>
+              KPIs · Dashboards<br>
+              Relatórios · Storytelling<br>
+              Análise de dados
+            </p>
+
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="icon-circle small">
+              <svg class="icon">
+                <use href="#icon-database"></use>
+              </svg>
+            </div>
+
+            <h3>Dados & Modelagem</h3>
+
+            <p>
+              SQL · Modelagem de Dados<br>
+              ERwin · Data Warehouse<br>
+              Modelagem Lógica e Física<br>
+              Estruturação de bases
+            </p>
+
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="icon-circle small">
+              <svg class="icon">
+                <use href="#icon-flow"></use>
+              </svg>
+            </div>
+
+            <h3>Engenharia & Integração</h3>
+
+            <p>
+              ETL · DataStage<br>
+              Python · Tratamento de dados<br>
+              Integração de fontes<br>
+              Processos de carga
+            </p>
+
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="icon-circle small">
+              <svg class="icon">
+                <use href="#icon-cloud"></use>
+              </svg>
+            </div>
+
+            <h3>Cloud & Dados</h3>
+
+            <p>
+              AWS · Athena · Lambda<br>
+              Consultas SQL<br>
+              Ambientes em nuvem<br>
+              Processamento de dados
+            </p>
+
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="icon-circle small">
+              <svg class="icon">
+                <use href="#icon-folder"></use>
+              </svg>
+            </div>
+
+            <h3>Soluções Corporativas</h3>
+
+            <p>
+              SharePoint · Power Apps<br>
+              Bizagi<br>
+              Portais corporativos<br>
+              Fluxos de processo
+            </p>
+
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="icon-circle small">
+              <svg class="icon">
+                <use href="#icon-people"></use>
+              </svg>
+            </div>
+
+            <h3>Negócio & Governança</h3>
+
+            <p>
+              Levantamento de requisitos<br>
+              Indicadores · Orçamento<br>
+              Projetos · Contratos<br>
+              Scrum · Kanban
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+         05 - PROJETOS & CASES
+    ======================================================= -->
+
+    <section id="projetos" class="screen glow-left glow-right-soft">
+
+      <div class="container">
+
+        <div class="section-intro">
+
+          <p class="eyebrow">
+            PROJETOS & CASES
+          </p>
+
+          <h2 class="display-title">
+            Problemas reais.<br>
+            Soluções com dados.
+          </h2>
+
+          <p>
+            Atuei em diferentes contextos e setores, transformando
+            dados complexos em informação estruturada para apoiar
+            decisões, processos e estratégias de negócio.
+          </p>
+
+        </div>
+
+
+        <div class="case-grid">
+
+          <article class="case-card">
+
+            <div class="case-heading">
+
+              <div class="case-icon">
+                <svg class="icon">
+                  <use href="#icon-people"></use>
+                </svg>
+              </div>
+
+              <div>
+                <span class="year">2020</span>
+
+                <h3>
+                  Centralização de dados
+                  sobre pessoas com deficiência
+                </h3>
+
+                <p class="company">
+                  Secretaria Nacional dos Direitos
+                  da Pessoa com Deficiência
+                </p>
+              </div>
+
+            </div>
+
+            <div class="case-block">
+              <strong>DESAFIO</strong>
+
+              <p>
+                Informações dispersas entre diferentes órgãos e fontes,
+                sem centralização adequada.
+              </p>
+            </div>
+
+            <div class="case-block">
+              <strong>ATUAÇÃO</strong>
+
+              <p>
+                Estruturação, tratamento e centralização de dados;
+                construção de bases e dashboards; parceria com a Fiocruz
+                e direcionamento de atividades da equipe.
+              </p>
+            </div>
+
+            <div class="case-block">
+              <strong>IMPACTO</strong>
+
+              <p>
+                Informações consolidadas para apoiar análises,
+                políticas públicas e decisões estratégicas.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="case-card">
+
+            <div class="case-heading">
+
+              <div class="case-icon">
+                <svg class="icon">
+                  <use href="#icon-chart"></use>
+                </svg>
+              </div>
+
+              <div>
+                <span class="year">2023</span>
+
+                <h3>
+                  Governança e
+                  acompanhamento executivo
+                </h3>
+
+                <p class="company">
+                  Every / ANA
+                </p>
+              </div>
+
+            </div>
+
+            <div class="case-block">
+              <strong>DESAFIO</strong>
+
+              <p>
+                Consolidar o acompanhamento de orçamento,
+                projetos, contratos e entregas.
+              </p>
+            </div>
+
+            <div class="case-block">
+              <strong>ATUAÇÃO</strong>
+
+              <p>
+                Governança de TI, construção de indicadores
+                e painel gerencial em Power BI, além da criação
+                de portal corporativo em SharePoint.
+              </p>
+            </div>
+
+            <div class="case-block">
+              <strong>IMPACTO</strong>
+
+              <p>
+                Visão executiva estruturada para acompanhamento
+                da gestão e tomada de decisão.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="case-card">
+
+            <div class="case-heading">
+
+              <div class="case-icon">
+                <svg class="icon">
+                  <use href="#icon-store"></use>
+                </svg>
+              </div>
+
+              <div>
+                <span class="year">2024</span>
+
+                <h3>
+                  Inteligência comercial
+                  e performance
+                </h3>
+
+                <p class="company">
+                  Surf Telecom
+                </p>
+              </div>
+
+            </div>
+
+            <div class="case-block">
+              <strong>DESAFIO</strong>
+
+              <p>
+                Acompanhar vendas, campanhas, estoque,
+                metas e desempenho em diferentes regiões.
+              </p>
+            </div>
+
+            <div class="case-block">
+              <strong>ATUAÇÃO</strong>
+
+              <p>
+                Dashboards, relatórios, projeções comerciais,
+                acompanhamento de campanhas e análises
+                com AWS, Athena e Lambda.
+              </p>
+            </div>
+
+            <div class="case-block">
+              <strong>IMPACTO</strong>
+
+              <p>
+                Mais visibilidade sobre desempenho comercial,
+                metas e comportamento das vendas.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="case-card">
+
+            <div class="case-heading">
+
+              <div class="case-icon">
+                <svg class="icon">
+                  <use href="#icon-database"></use>
+                </svg>
+              </div>
+
+              <div>
+                <span class="year">2025+</span>
+
+                <h3>
+                  Modelagem e BI em
+                  ambiente corporativo
+                </h3>
+
+                <p class="company">
+                  Stefanini / Banco do Brasil
+                </p>
+              </div>
+
+            </div>
+
+            <div class="case-block">
+              <strong>DESAFIO</strong>
+
+              <p>
+                Preparar estruturas de dados para produção
+                e utilização por diferentes soluções.
+              </p>
+            </div>
+
+            <div class="case-block">
+              <strong>ATUAÇÃO</strong>
+
+              <p>
+                Modelagem com ERwin, integração com DataStage,
+                estruturação de 25+ tabelas e 500+ campos,
+                dashboards e atualização de portal SharePoint.
+              </p>
+            </div>
+
+            <div class="case-block">
+              <strong>IMPACTO</strong>
+
+              <p>
+                Estruturas de dados organizadas e confiáveis
+                para utilização em soluções corporativas.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+         06 - EXPERIÊNCIA
+    ======================================================= -->
+
+    <section id="experiencia" class="screen glow-right">
+
+      <div class="container">
+
+        <div class="section-intro">
+
+          <p class="eyebrow">
+            EXPERIÊNCIA PROFISSIONAL
+          </p>
+
+          <h2 class="display-title">
+            Experiência que gera<br>
+            resultado e impacto.
+          </h2>
+
+          <p>
+            Atuação em diferentes organizações e projetos,
+            conectando análise, tecnologia e visão de negócio.
+          </p>
+
+        </div>
+
+
+        <div class="experience-track">
+
+          <div class="experience-line"></div>
+
+
+          <article class="experience-card">
+
+            <div class="experience-marker">
+              <svg class="icon">
+                <use href="#icon-bank"></use>
+              </svg>
+            </div>
+
+            <span class="period">
+              OUT 2020 — FEV 2023
+            </span>
+
+            <h3>
+              Ministério dos Direitos Humanos
+              e da Cidadania
+            </h3>
+
+            <p class="experience-context">
+              Secretaria Nacional dos Direitos da Pessoa com Deficiência
+            </p>
+
+            <strong class="experience-role">
+              Analista de Dados Júnior
+            </strong>
+
+            <ul>
+              <li>Coleta, tratamento e integração de dados.</li>
+              <li>Estruturação de bases e dashboards.</li>
+              <li>ETL e apoio à implantação de Data Warehouse.</li>
+              <li>Qualidade, padronização e análise das informações.</li>
+            </ul>
+
+          </article>
+
+
+          <article class="experience-card">
+
+            <div class="experience-marker">
+              <svg class="icon">
+                <use href="#icon-chart"></use>
+              </svg>
+            </div>
+
+            <span class="period">
+              FEV 2023 — MAR 2024
+            </span>
+
+            <h3>
+              Every Cybersecurity and GRC
+            </h3>
+
+            <p class="experience-context">
+              Projeto ANA
+            </p>
+
+            <strong class="experience-role">
+              Analista de Dados Consultora
+            </strong>
+
+            <ul>
+              <li>Dashboards e indicadores em Power BI.</li>
+              <li>Gestão orçamentária, projetos e governança.</li>
+              <li>Power Apps, SharePoint e análise com Python.</li>
+              <li>Fluxos corporativos e suporte à decisão.</li>
+            </ul>
+
+          </article>
+
+
+          <article class="experience-card">
+
+            <div class="experience-marker">
+              <svg class="icon">
+                <use href="#icon-store"></use>
+              </svg>
+            </div>
+
+            <span class="period">
+              ABR 2024 — MAI 2025
+            </span>
+
+            <h3>
+              Surf Telecom
+            </h3>
+
+            <p class="experience-context">
+              Inteligência de mercado e performance
+            </p>
+
+            <strong class="experience-role">
+              Analista de Dados Pleno
+            </strong>
+
+            <ul>
+              <li>Análise de mercado, vendas e previsões.</li>
+              <li>Dashboards e relatórios gerenciais.</li>
+              <li>KPIs, campanhas e acompanhamento de estoque.</li>
+              <li>SQL, Python, Power BI, AWS, Athena e Lambda.</li>
+            </ul>
+
+          </article>
+
+
+          <article class="experience-card">
+
+            <div class="experience-marker">
+              <svg class="icon">
+                <use href="#icon-database"></use>
+              </svg>
+            </div>
+
+            <span class="period">
+              ABR 2025 — ATUAL
+            </span>
+
+            <h3>
+              Stefanini
+            </h3>
+
+            <p class="experience-context">
+              Cliente: Banco do Brasil
+            </p>
+
+            <strong class="experience-role">
+              Analista de Dados Pleno
+            </strong>
+
+            <ul>
+              <li>ETL e integração com IBM DataStage.</li>
+              <li>Modelagem lógica e física com ERwin.</li>
+              <li>SQL, Python e estruturas para produção.</li>
+              <li>Power BI, Data Warehouse e SharePoint.</li>
+            </ul>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+         07 - LIDERANÇA
+    ======================================================= -->
+
+    <section id="lideranca" class="screen glow-left glow-right-soft">
+
+      <div class="container">
+
+        <div class="section-intro leadership-intro">
+
+          <p class="eyebrow">
+            LIDERANÇA & COLABORAÇÃO
+          </p>
+
+          <h2 class="leadership-title">
+            Liderança que conecta.<br>
+            Colaboração que gera impacto.
+          </h2>
+
+          <p>
+            Resultados consistentes dependem de comunicação clara,
+            responsabilidade e colaboração entre pessoas e áreas.
+          </p>
+
+        </div>
+
+
+        <div class="leadership-grid">
+
+          <article class="leadership-card">
+
+            <div class="leadership-heading">
+
+              <div class="icon-circle">
+                <svg class="icon">
+                  <use href="#icon-people"></use>
+                </svg>
+              </div>
+
+              <h3>
+                Liderança<br>
+                <span>técnica</span>
+              </h3>
+
+            </div>
+
+            <ul>
+              <li>Direcionamento de atividades e entregas.</li>
+              <li>Compartilhamento de conhecimento.</li>
+              <li>Organização e acompanhamento de demandas.</li>
+              <li>Visão técnica aplicada à decisão.</li>
+            </ul>
+
+          </article>
+
+
+          <article class="leadership-card">
+
+            <div class="leadership-heading">
+
+              <div class="icon-circle">
+                <svg class="icon">
+                  <use href="#icon-message"></use>
+                </svg>
+              </div>
+
+              <h3>
+                Comunicação<br>
+                <span>efetiva</span>
+              </h3>
+
+            </div>
+
+            <ul>
+              <li>Tradução de informações técnicas.</li>
+              <li>Comunicação com negócio e lideranças.</li>
+              <li>Apresentação de indicadores e resultados.</li>
+              <li>Alinhamento de requisitos e entregas.</li>
+            </ul>
+
+          </article>
+
+
+          <article class="leadership-card">
+
+            <div class="leadership-heading">
+
+              <div class="icon-circle">
+                <svg class="icon">
+                  <use href="#icon-chart"></use>
+                </svg>
+              </div>
+
+              <h3>
+                Colaboração<br>
+                <span>estratégica</span>
+              </h3>
+
+            </div>
+
+            <ul>
+              <li>Atuação entre negócio e tecnologia.</li>
+              <li>Construção conjunta de soluções.</li>
+              <li>Levantamento e entendimento de necessidades.</li>
+              <li>Articulação entre diferentes áreas.</li>
+            </ul>
+
+          </article>
+
+
+          <article class="leadership-card">
+
+            <div class="leadership-heading">
+
+              <div class="icon-circle">
+                <svg class="icon">
+                  <use href="#icon-handshake"></use>
+                </svg>
+              </div>
+
+              <h3>
+                Resultados<br>
+                <span>que importam</span>
+              </h3>
+
+            </div>
+
+            <ul>
+              <li>Foco em entrega e geração de valor.</li>
+              <li>Responsabilidade sobre demandas.</li>
+              <li>Melhoria contínua.</li>
+              <li>Decisões orientadas por dados.</li>
+            </ul>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+         08 - FORMAÇÃO
+    ======================================================= -->
+
+    <section id="formacao" class="screen compact-screen glow-left">
+
+      <div class="container">
+
+        <h2 class="formation-main-title">
+          FORMAÇÃO & DESENVOLVIMENTO
         </h2>
 
 
-        <p class="contact-copy">
-          Tenho interesse em oportunidades nas áreas de Dados,
-          Business Intelligence e Tecnologia, incluindo posições
-          com espaço para desenvolvimento em liderança.
-        </p>
+        <div class="formation-layout">
+
+          <div>
+
+            <p class="formation-label">
+              FORMAÇÃO ACADÊMICA
+            </p>
+
+            <article class="education-card">
+
+              <span class="education-type">
+                GRADUAÇÃO
+              </span>
+
+              <h3>
+                Análise e Desenvolvimento
+                de Sistemas
+              </h3>
+
+              <p>
+                IESB — Instituto de Educação Superior de Brasília
+              </p>
+
+              <div class="education-date">
+                <strong>CONCLUÍDA EM</strong>
+                <span>2022</span>
+              </div>
+
+            </article>
+
+          </div>
 
 
+          <div>
 
-        <div class="social-links">
+            <p class="formation-label">
+              CONHECIMENTOS COMPLEMENTARES
+            </p>
+
+            <div class="learning-grid">
+
+              <article>
+                <h3>Power BI & DAX</h3>
+                <p>Dashboards, KPIs e relatórios</p>
+              </article>
+
+              <article>
+                <h3>SQL</h3>
+                <p>MySQL, PostgreSQL e SQL Server</p>
+              </article>
+
+              <article>
+                <h3>Python</h3>
+                <p>Análise e automação</p>
+              </article>
+
+              <article>
+                <h3>ETL</h3>
+                <p>Integração e DataStage</p>
+              </article>
+
+              <article>
+                <h3>Modelagem</h3>
+                <p>ERwin e Data Warehouse</p>
+              </article>
+
+              <article>
+                <h3>Metodologias Ágeis</h3>
+                <p>Scrum e Kanban</p>
+              </article>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
 
 
-          <!-- E-MAIL -->
+    <!-- ======================================================
+         09 - CONTATO
+    ======================================================= -->
+
+    <section id="contato" class="screen contact-section glow-left glow-right">
+
+      <div class="container">
+
+        <div class="contact-intro">
+
+          <h2 class="display-title">
+            Vamos conversar?
+          </h2>
+
+          <p>
+            Estou aberta a novas oportunidades e parcerias.<br>
+            Vamos transformar dados em decisões de impacto.
+          </p>
+
+        </div>
+
+
+        <div class="contact-layout">
 
           <a
             href="mailto:julialins96@gmail.com"
-            class="social-item"
-            aria-label="Enviar e-mail para Júlia"
-            title="E-mail"
+            class="contact-card"
           >
 
-            <div class="social-circle">
-
-              <svg
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm8 7 8-5H4l8 5zm0 2L4 8v10h16V8l-8 5z"
-                />
+            <div class="icon-circle">
+              <svg class="icon">
+                <use href="#icon-mail"></use>
               </svg>
-
             </div>
 
-
-            <strong>
-              E-mail
-            </strong>
+            <strong>E-mail</strong>
 
             <span>
               julialins96@gmail.com
@@ -1194,118 +1465,89 @@
           </a>
 
 
-
-          <!-- LINKEDIN -->
-
           <a
             href="https://www.linkedin.com/in/j%C3%BAlia-daphiny-196402112/"
             target="_blank"
             rel="noopener noreferrer"
-            class="social-item"
-            aria-label="Abrir LinkedIn de Júlia"
-            title="LinkedIn"
+            class="contact-card"
           >
 
-            <div class="social-circle">
-
-              <svg
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  d="M6.5 8.5H3V21h3.5V8.5zM4.75 3A2.25 2.25 0 1 0 4.75 7.5 2.25 2.25 0 0 0 4.75 3zM21 13.8c0-3.7-2-5.4-4.6-5.4-2.1 0-3.1 1.2-3.6 2V8.5H9.3V21h3.5v-6.2c0-1.6.3-3.2 2.4-3.2s2.1 1.9 2.1 3.3V21H21v-7.2z"
-                />
+            <div class="icon-circle">
+              <svg class="icon">
+                <use href="#icon-linkedin"></use>
               </svg>
-
             </div>
 
-
-            <strong>
-              LinkedIn
-            </strong>
+            <strong>LinkedIn</strong>
 
             <span>
-              Ver perfil profissional
+              linkedin.com/in/<br>
+              júlia-daphiny
             </span>
 
           </a>
 
 
+          <div class="contact-card">
 
-          <!-- GITHUB -->
-
-          <a
-            href="https://github.com/JuliaDaphny"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-item"
-            aria-label="Abrir GitHub de Júlia"
-            title="GitHub"
-          >
-
-            <div class="social-circle">
-
-              <svg
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  d="M12 .7C5.7.7.6 5.8.6 12.1c0 5 3.2 9.3 7.7 10.8.6.1.8-.3.8-.6v-2.2c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.3-5.1-5.6 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.5.1-3 0 0 1-.3 3.1 1.1.9-.3 1.9-.4 2.8-.4s1.9.1 2.8.4c2.1-1.4 3.1-1.1 3.1-1.1.6 1.5.2 2.7.1 3 .7.8 1.2 1.8 1.2 3 0 4.4-2.6 5.3-5.1 5.6.4.3.8 1 .8 2v3c0 .4.2.7.8.6 4.5-1.5 7.7-5.8 7.7-10.8C23.4 5.8 18.3.7 12 .7z"
-                />
+            <div class="icon-circle">
+              <svg class="icon">
+                <use href="#icon-pin"></use>
               </svg>
-
             </div>
 
-
-            <strong>
-              GitHub
-            </strong>
+            <strong>Localização</strong>
 
             <span>
-              github.com/JuliaDaphny
+              Brasília — DF
             </span>
 
-          </a>
+          </div>
 
+
+          <article class="contact-feature">
+
+            <h3>
+              Disponível para novos desafios
+            </h3>
+
+            <p>
+              Interesse em oportunidades de Dados,
+              Business Intelligence e Tecnologia,
+              com atuação técnica, visão de negócio
+              e liderança.
+            </p>
+
+            <a
+              href="https://wa.me/5561991060515"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline contact-btn"
+            >
+              Vamos conversar
+              <span>→</span>
+            </a>
+
+          </article>
 
         </div>
 
-      </div>
 
+        <footer class="footer">
+
+          <p>
+            © <span id="current-year"></span>
+            Júlia Daphiny. Todos os direitos reservados.
+          </p>
+
+        </footer>
+
+      </div>
     </section>
 
-
   </main>
-
-
-
-  <!-- =========================
-       RODAPÉ
-  ========================== -->
-
-  <footer class="footer">
-
-    <div class="container footer-content">
-
-      <p>
-        ©
-        <span id="current-year"></span>
-        Júlia Daphiny.
-      </p>
-
-
-      <a href="#topo">
-        Voltar ao topo ↑
-      </a>
-
-    </div>
-
-  </footer>
-
-
 
   <script src="script.js"></script>
 
 </body>
-
 </html>
